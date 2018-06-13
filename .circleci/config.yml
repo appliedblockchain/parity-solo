@@ -6,7 +6,7 @@ jobs:
     steps:
       - setup_remote_docker
       - checkout
-      - run: docker build -t appliedblockchain/parity-solo-instant .
+      - run: docker build -t appliedblockchain/parity-solo .
       - run:
           name: Push Docker image
           command: |
