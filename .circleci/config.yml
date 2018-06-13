@@ -11,19 +11,19 @@ jobs:
           name: Push Docker image
           command: |
             echo $DOCKER_PASSWORD | docker login --username $DOCKER_USER --password-stdin
-            docker push appliedblockchain/parity-solo-instant
+            docker push appliedblockchain/parity-solo
   build_tag:
     docker:
       - image: docker
     steps:
       - setup_remote_docker
       - checkout
-      - run: docker build -t appliedblockchain/parity-solo-instant:$CIRCLE_TAG .
+      - run: docker build -t appliedblockchain/parity-solo:$CIRCLE_TAG .
       - run:
           name: Push Docker image
           command: |
             echo $DOCKER_PASSWORD | docker login --username $DOCKER_USER --password-stdin
-            docker push appliedblockchain/parity-solo-instant:$CIRCLE_TAG
+            docker push appliedblockchain/parity-solo:$CIRCLE_TAG
 
 workflows:
   version: 2
