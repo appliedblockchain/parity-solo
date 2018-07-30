@@ -60,3 +60,14 @@ Private key: 0x453e62ec837e855413c2bc4be5d7a0ca003d132385b72c585d790115a01d6332
 Public key:  0x729786320ac3f64fd76baff2e714fb358e978d3772c5508d665a23ebe8cd5f3f3f79d0ee08004779e6fbe5e01f0ed91782acad50d26d2a29c0aa9ab41c1f8e48
 Private key: 0x24aa8091c7bdf58fbd1c9ffb1bd30aa66a6ca238526da50a319e411365f64415
 ```
+
+## Running locally
+
+Once you clone the repository you can:
+
+```
+docker-compose build parity
+docker-compose up parity
+```
+
+or `docker-compose up --build parity`
