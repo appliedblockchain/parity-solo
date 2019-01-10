@@ -1,5 +1,7 @@
 # Parity solo
 
+https://github.com/appliedblockchain/parity-solo
+
 ## Start the instance
 ```
 docker run -p 8545:8545 appliedblockchain/parity-solo
