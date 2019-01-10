@@ -3,9 +3,11 @@
 https://github.com/appliedblockchain/parity-solo
 
 ## Start the instance
+
 ```
 docker run -p 8545:8545 appliedblockchain/parity-solo
 ```
+
 This will start a single Parity node running an Authority Round chain with a block time of 1 second readily accessible at port 8545. The account following accounts are unlocked and endowed with a lot of Ether.
 
 If you need to open the websocket port as well, add the 8546 port:
@@ -15,7 +17,9 @@ docker run -p 8545:8545 -p 8546:8546 appliedblockchain/parity-solo
 
 ## Available accounts
 
-The following accounts are unlocked and endowed with a lot of Ether:
+The following accounts are prefunded with "test" ethers, please don't use these keys on non-dev environments:
+
+
 
 ```
 0x1F2e5282481C07BC8B7b07E53Bc3EF6A8012D6b7
