@@ -15,7 +15,7 @@ password = ["/solo/pw.txt"]
 interface = "0.0.0.0"
 cors = ["all"]
 hosts = ["all"]
-apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_accounts", "signer", "parity_set", "shh"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_accounts", "signer", "parity_set", "shh", "shh_pubsub"]
 
 [websockets]
 interface = "0.0.0.0"
@@ -32,3 +32,7 @@ reseal_min_period = 10
 reseal_max_period = 10000
 engine_signer = "0x1F2e5282481C07BC8B7b07E53Bc3EF6A8012D6b7"
 tx_gas_limit = "50000000"
+
+[whisper]
+enabled = true
+pool_size = 64
