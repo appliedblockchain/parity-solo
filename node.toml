@@ -15,7 +15,7 @@ password = ["/solo/pw.txt"]
 interface = "0.0.0.0"
 cors = ["all"]
 hosts = ["all"]
-apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_accounts", "signer", "parity_set"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_accounts", "signer", "parity_set", "shh"]
 
 [websockets]
 interface = "0.0.0.0"
