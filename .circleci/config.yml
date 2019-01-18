@@ -30,7 +30,7 @@ workflows:
   main:
     jobs:
       - build_master:
-          context: org-global
+          context: org-global 
           filters:
             branches:
               only: master
